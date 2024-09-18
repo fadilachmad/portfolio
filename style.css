@@ -11,13 +11,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "BoutiqueBitmap", "PressStart2P", sans-serif;
+  font-family: "PressStart2P", "BoutiqueBitmap", sans-serif;
 }
 
 body {
   background-color: white;
   box-sizing: border-box;
-  /* background: url("Assets/pixel-lembah.png") no-repeat center center/cover; */
+  /* background: url("Assets/image copyx  .png") no-repeat center center/cover; */
   height: 2000px;
 }
 
@@ -32,8 +32,8 @@ body {
   justify-content: space-between;
   z-index: 999;
 
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Apply blur effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 
   /* border: 1px solid black; */
 }
@@ -41,7 +41,7 @@ body {
 .navbar .logo {
   padding: 20px;
   cursor: pointer;
-  font-family: "PressStart2P", sans-serif;
+  color: #3d4e4c;
 }
 
 .navbar ul {
@@ -53,30 +53,30 @@ body {
 .navbar ul li {
   list-style: none;
   padding: 20px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  position: relative; /* Required for positioning the ::after element */
-  color: purple;
+  position: relative;
+  color: #55425b;
 }
 
 .navbar ul li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* Adjust the position of the line */
+  bottom: -5px;
   width: 0;
-  height: 2px; /* Thickness of the underline */
+  height: 2px;
   background: rgba(50, 0, 60, 0.8);
   backdrop-filter: blur(10px);
 
-  transition: width 0.3s ease; /* Transition effect */
+  transition: width 0.3s ease;
 }
 
 .navbar ul li a:hover::after {
-  width: 100%; /* Expand the line to the full width on hover */
+  width: 100%;
 }
 /* Navbar End */
 
@@ -86,16 +86,16 @@ main {
   top: 50px;
 }
 
-img {
-  width: 100vw;
+main .background {
+  width: 100%;
 }
 
 .card {
-  width: 300px;
-  height: 375px;
+  width: 235px;
+  height: 300px;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(5px); /* Apply blur effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
   z-index: 1;
   position: absolute;
   top: 100px;
@@ -103,7 +103,7 @@ img {
 }
 
 .inner {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   top: 4%;
   right: 4%;
@@ -111,7 +111,21 @@ img {
   height: 92%;
 }
 
+.inner img {
+  width: 270px;
+  margin-left: -20px;
+}
+
+.inner .shadow {
+  width: 100px;
+  height: 35px;
+  margin-left: 70px;
+  position: relative;
+  bottom: 45px;
+  z-index: -1;
+}
+
 .desc {
-  height: 100px;
-  top: 500px;
+  height: 85px;
+  top: 420px;
 }
